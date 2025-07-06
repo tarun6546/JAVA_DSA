@@ -34,6 +34,15 @@ public class bimplementation {
                 head = temp;
             }
         }
+        void insertAtIndex(int idx,int data){
+            Node t = new Node(data);
+            Node  temp = head;
+            for(int i=0;i<idx-1 && temp!=null;i++){
+                temp = temp.next;
+            }
+            t.next = temp.next;
+            temp.next = t;
+        }
         void display(){
             Node temp = head;
             while(temp!=null){
@@ -50,6 +59,21 @@ public class bimplementation {
             }
             return count;
         }
+        int getAnIndex(int idx){
+            Node temp = head;
+            for(int i=0;i<=idx;i++){
+                temp = temp.next;
+            }
+            return temp.data;
+        }void deleteAt(int idx){
+            Node temp = head;
+            for(int i=0;i<=idx-1;i++){
+                temp=temp.next;
+            }
+            temp.next = temp.next.next;
+            
+        }
+
         
         
     }
@@ -64,6 +88,12 @@ public class bimplementation {
         ll.insertAtHead(2);
         ll.insertAtHead(1);
         ll.display();
+        System.out.println(" ");
+        ll.insertAtIndex(3,99);
+        ll.display();
+        System.out.println(" ");
+        // ll.getAnIndex(3);
+
     }
     
 }
