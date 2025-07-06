@@ -66,12 +66,16 @@ public class bimplementation {
             }
             return temp.data;
         }void deleteAt(int idx){
+            if(idx==0){
+                head = head.next;
+            }    
             Node temp = head;
             for(int i=0;i<=idx-1;i++){
                 temp=temp.next;
+                
             }
             temp.next = temp.next.next;
-            
+
         }
 
         
