@@ -39,6 +39,47 @@ public class pdoublyll {
         System.out.println();
     }
 
+    //Insertion at head
+    public static Node insertAtHead(Node head, int data) {
+        Node t = new Node(data);
+        t.next = head; // new node points to current head
+        head.prev = t; // current head's previous points to new node
+        head = t; // head now points to new node
+        return head;
+
+    }
+    //Insertion at tail
+    public static Node insertAtTail(Node head, int data){
+        Node temp=head;
+        //temp ko last tak leke jao
+        while(temp.next!=null){
+            temp = temp.next;
+        }
+        Node t = new Node(data);
+        temp.next = t; // last node's next points to new node
+        t.prev = temp; // new node's previous points to last node
+        return head;
+    }
+    //Insert at any position in ddl
+   public static void insertAtIdx(Node head, int idx, int data) {
+    Node s = head;
+
+    for (int i = 1; i < idx; i++) {
+        if (s.next == null) break; // prevent null pointer
+        s = s.next;
+    }
+
+    Node r = s.next;
+    Node t = new Node(data);
+
+    s.next = t;
+    t.prev = s;
+
+    t.next = r;
+    if (r != null) r.prev = t;
+}
+
+
     public static void main(String[] args){
         Node a = new Node(10);
         Node b = new Node(20);
@@ -63,5 +104,14 @@ public class pdoublyll {
         System.out.println("Tail: " + e.data);
 
         displayrandom(c);
+
+        Node newHead = insertAtHead(a, 5);
+        System.out.println("After inserting at head:");
+        display(newHead);
+        insertAtTail(a,90);
+        display(newHead);
+        insertAtIdx(newHead, 3, 25);
+        System.out.println("After inserting at index 3:");
+        display(newHead);
     }
 }
