@@ -16,6 +16,7 @@ public class ipostfixtoinfix{
                 String t = "(" + v1 + op + v2 + ")"; // infix format
                 val.push(t);
             }
+            
         }
         String result = val.peek();
         System.out.println("Result of postfix to infix Expression: " + result);
