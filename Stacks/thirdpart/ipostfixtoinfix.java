@@ -9,6 +9,7 @@ public class ipostfixtoinfix{
             if(ascii>=48 && ascii<=57){
                 val.push(String.valueOf(ch));
             }
+            
             else{
                 String v2 = val.pop();
                 String v1 = val.pop();
@@ -16,7 +17,7 @@ public class ipostfixtoinfix{
                 String t = "(" + v1 + op + v2 + ")"; // infix format
                 val.push(t);
             }
-            
+
         }
         String result = val.peek();
         System.out.println("Result of postfix to infix Expression: " + result);
