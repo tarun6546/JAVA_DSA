@@ -9,6 +9,7 @@ public class ipostfixtoinfix{
             if(ascii>=48 && ascii<=57){
                 val.push(String.valueOf(ch));
             }
+
             
             else{
                 String v2 = val.pop();
