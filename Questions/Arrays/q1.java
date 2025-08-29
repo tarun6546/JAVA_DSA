@@ -1,7 +1,7 @@
 //largest element in an array
 public class q1 {
 
-    // Returns the largest element in a non-empty array.
+    
     public static int largest(int[] arr) {
         if (arr == null || arr.length == 0) {
             throw new IllegalArgumentException("Array must be non-null and non-empty");
