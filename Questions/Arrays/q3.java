@@ -14,7 +14,8 @@ public class q3{
         int[] a1 = {1, 2, 3, 4, 5};
         int[] a2 = {10, 20, 15, 30};
         int[] a3 = {5, 5, 5, 5};
-        
+        //take input
+
 
         System.out.println(isSorted(a1)); // true
         System.out.println(isSorted(a2)); // false
