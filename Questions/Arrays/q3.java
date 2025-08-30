@@ -16,6 +16,8 @@ public class q3{
         int[] a3 = {5, 5, 5, 5};
         //take input
 
+        
+
 
         System.out.println(isSorted(a1)); // true
         System.out.println(isSorted(a2)); // false
