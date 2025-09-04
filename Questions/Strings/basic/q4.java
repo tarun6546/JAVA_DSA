@@ -35,5 +35,7 @@ public class q4 {
         sc.close();
 
         
+
+
     }
 }
