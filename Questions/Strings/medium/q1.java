@@ -21,7 +21,7 @@ class q1 {
 
         q1 sol = new q1();
         String result = sol.reverseWords(input);
-        //
+        /
 
         System.out.println(result);
         sc.close();
