@@ -34,7 +34,7 @@ public class q4 {
 
         sc.close();
 
-        //change
+        //chang
 
         
 
