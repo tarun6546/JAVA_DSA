@@ -33,6 +33,7 @@ public class q4 {
         }
 
         sc.close();
+        j
 
         
 
