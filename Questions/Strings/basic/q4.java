@@ -31,7 +31,7 @@ public class q4 {
         } else {
             System.out.println("No, the strings are NOT Anagram ❌");
         }
-
+        //close the scanner class
         sc.close();
         
 
