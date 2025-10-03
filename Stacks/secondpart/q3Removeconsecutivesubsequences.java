@@ -33,7 +33,8 @@ public class q3Removeconsecutivesubsequences {
         }
     }
 }
-/dsa
+
+//fsdfsd
 // This code removes consecutive duplicate elements from an array using a stack.
 // hfgfdsad
 // fgdfg
