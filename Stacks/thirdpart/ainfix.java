@@ -74,7 +74,7 @@ public class ainfix{
         }
         System.out.println(val.peek()); 
         // Output the result of the expression
-        // For the input "9-(5+3)*4/6", it should print
+        // For the input "9-(5+3)*4/6", it should pr
         
 
 
