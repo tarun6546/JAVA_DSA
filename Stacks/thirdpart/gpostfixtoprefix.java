@@ -21,3 +21,4 @@ public class gpostfixtoprefix {
         System.out.println("Result of postfix to prefix Expression: " + result);
     }
 }
+//ZCXZC
