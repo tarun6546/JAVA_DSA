@@ -24,4 +24,4 @@ public class ipostfixtoinfix{
         System.out.println("Result of postfix to infix Expression: " + result);
     }
 }
-//fsdsf
+//fsds
