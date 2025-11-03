@@ -47,3 +47,4 @@ public class q3 {
         sc.close();
     }
 }
+//hk
