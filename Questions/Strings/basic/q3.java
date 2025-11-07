@@ -48,4 +48,3 @@ public class q3 {
     }
 }
 
-//jkij
